@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/compass_react/static/css/main.157270fe.css",
+    "main.js": "/compass_react/static/js/main.d1294ae2.js",
+    "static/js/453.ed3810f9.chunk.js": "/compass_react/static/js/453.ed3810f9.chunk.js",
+    "static/media/features_image.png": "/compass_react/static/media/features_image.35784fd51aa1f0027c2d.png",
+    "static/media/features_mob_image.png": "/compass_react/static/media/features_mob_image.7609cffda44dbdde0210.png",
+    "static/media/solutions_image2.png": "/compass_react/static/media/solutions_image2.0994e46acc6cf0b84660.png",
+    "static/media/helvetica-l.otf": "/compass_react/static/media/helvetica-l.677f82c0f6e45b4eeaf2.otf",
+    "static/media/solutions_image1.png": "/compass_react/static/media/solutions_image1.5263090ae07d9cbdc2e0.png",
+    "static/media/helvetica.ttf": "/compass_react/static/media/helvetica.e674236c5404f341ac21.ttf",
+    "static/media/features_icon2.svg": "/compass_react/static/media/features_icon2.220dc37e61430728a77de21e7f11a9e3.svg",
+    "static/media/features_icon3.svg": "/compass_react/static/media/features_icon3.05ac7877bf6d3edb45d98d259b0b1420.svg",
+    "static/media/solutions_icon2.svg": "/compass_react/static/media/solutions_icon2.8500f34e7efc510d13657b9c36e4ab04.svg",
+    "static/media/benefits_bg.svg": "/compass_react/static/media/benefits_bg.74a96a35381c704ac593.svg",
+    "static/media/compass_logo.svg": "/compass_react/static/media/compass_logo.18abfd3443f03cb4936ccceb301e3fc3.svg",
+    "static/media/logo_white.svg": "/compass_react/static/media/logo_white.adc0c250ae27784f7f08b7886a7b7d46.svg",
+    "static/media/benefits_compass_bg.svg": "/compass_react/static/media/benefits_compass_bg.dceedeb85b331c920224.svg",
+    "static/media/services_icon3.svg": "/compass_react/static/media/services_icon3.f57b96762e95365edd09438db6320d0c.svg",
+    "static/media/solutions_icon1.svg": "/compass_react/static/media/solutions_icon1.c8e1499053acdf181972737f8465d845.svg",
+    "static/media/features_icon1.svg": "/compass_react/static/media/features_icon1.d89993e12431b8bf08b9a1d6a82cb498.svg",
+    "static/media/services_icon2.svg": "/compass_react/static/media/services_icon2.af3cea2e802ed3eaf59d25948acd309f.svg",
+    "static/media/services_icon4.svg": "/compass_react/static/media/services_icon4.fb31a418122b4c953d5526ad4995df06.svg",
+    "static/media/benefits_mob_bg.svg": "/compass_react/static/media/benefits_mob_bg.224ee20ac14975d9f8c8.svg",
+    "static/media/problems_icon1.svg": "/compass_react/static/media/problems_icon1.b8cebacc84b74a9d81f3a397aeefd896.svg",
+    "static/media/problems_icon3.svg": "/compass_react/static/media/problems_icon3.6c6f5f447f3fdeef07f6ad355dcefe72.svg",
+    "static/media/problems_icon4.svg": "/compass_react/static/media/problems_icon4.9ba755dbd602cb5a5888a62f4e505291.svg",
+    "static/media/problems_icon2.svg": "/compass_react/static/media/problems_icon2.f0bee7db9a262fafc61d18094f57e41f.svg",
+    "static/media/check_icon.svg": "/compass_react/static/media/check_icon.9a0cb38c671e1c0267bdbeccd6d05638.svg",
+    "static/media/services_icon1.svg": "/compass_react/static/media/services_icon1.d8a300b32122bf9b7f448f1b6d8d5623.svg",
+    "static/media/problems_icon5.svg": "/compass_react/static/media/problems_icon5.140da6d91fd9027a64c3eaec524b0ec9.svg",
+    "index.html": "/compass_react/index.html",
+    "main.157270fe.css.map": "/compass_react/static/css/main.157270fe.css.map",
+    "main.d1294ae2.js.map": "/compass_react/static/js/main.d1294ae2.js.map",
+    "453.ed3810f9.chunk.js.map": "/compass_react/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.157270fe.css",
+    "static/js/main.d1294ae2.js"
+  ]
+}
