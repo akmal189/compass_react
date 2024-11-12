@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+@font-face {
+    font-family: "helvetica-light";
+    src: url("./fonts/helvetica-l.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "helvetica";
+    src: url("./fonts/helvetica.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "helvetica-rounded";
+    src: url("./fonts/helvetica.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+:root {
+    --primary: #0BB9EE;
+    --primary-2: #2947D3;
+    --primary-hover: #2cccfd;
+    --black-blue: #030344;
+    --grey-1: #D9D9D9;
+    --grey-2: #7B7B7B;
+    --black: #1f2025;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-family: "helvetica-light", sans-serif;
+    background: #FAF6F3;
+    font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-size: 1.75rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+    font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+    font-size: 1.25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h4 {
+    font-size: 1.125rem;
+}
+
+.overflow_hidden {
+    overflow: hidden !important;
+}
+@media all and (min-width: 981px) {
+    .overflow_hidden {
+        padding-right: 17px;
+    }
+}
+
+form .form-field:not(:first-child) {
+    margin-top: 20px;
+}
+@media all and (max-width: 980px) {
+    form .form-field:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+form .form-field input[type=text], form .form-field input[type=tel], form .form-field input[type=email], form .form-field textarea, form .form-field select {
+    width: 100%;
+    outline: none;
+    padding: 17px 28px;
+    border: 1px solid var(--grey-1);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: #000;
+}
+@media all and (max-width: 980px) {
+    form .form-field input[type=text], form .form-field input[type=tel], form .form-field input[type=email], form .form-field textarea, form .form-field select {
+        padding: 12px 20px;
+    }
+}
+form .form-field input[type=text]:hover, form .form-field input[type=text]:focus, form .form-field input[type=tel]:hover, form .form-field input[type=tel]:focus, form .form-field input[type=email]:hover, form .form-field input[type=email]:focus, form .form-field textarea:hover, form .form-field textarea:focus, form .form-field select:hover, form .form-field select:focus {
+    border-color: #000;
+}
+form .form-field button {
+    margin-top: 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary);
+    gap: 10px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-family: "helvetica", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    width: 100%;
+    padding: 13px;
+}
+form .form-field button:hover {
+    background: var(--primary-hover);
+}
+form .form-field button:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    min-width: 20px;
+    width: 20px;
+    height: 15px;
+    background: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.9835 8.60261C21.374 8.21209 21.374 7.57893 20.9835 7.1884L14.6195 0.82444C14.229 0.433916 13.5958 0.433916 13.2053 0.82444C12.8148 1.21496 12.8148 1.84813 13.2053 2.23865L18.8622 7.89551L13.2053 13.5524C12.8148 13.9429 12.8148 14.5761 13.2053 14.9666C13.5958 15.3571 14.229 15.3571 14.6195 14.9666L20.9835 8.60261ZM0.276367 8.89551H20.2764V6.89551H0.276367V8.89551Z' fill='white'/%3E%3C/svg%3E%0A") 50%/cover no-repeat;
+}
+
+.swiper-notification {
+    display: none;
+}
+
+.swiper {
+    overflow: hidden;
+}
+
+.hide {
+    display: none !important;
+}
+
+* {
+    font-family: "helvetica-light", sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, iframe, video {
+    max-width: 100%;
+}
+
+.block-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.block-width {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.block-title {
+    font-family: "helvetica-light", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: var(--black-blue);
+    text-transform: uppercase;
+}
+@media all and (max-width: 980px) {
+    .block-title {
+        font-size: 36px;
+    }
+}
+.swiper-slide-active {
+    visibility: visible !important;
 }
