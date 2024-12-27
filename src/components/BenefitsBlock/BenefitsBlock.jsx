@@ -1,8 +1,51 @@
 import React from "react";
 import { observer } from 'mobx-react';
+import gsap from 'gsap';
 import classes from './BenefitsBlock.module.css';
 
 const BenefitsBlock = observer((props) => {
+    // Функция для добавления стилей
+    let addStylesBenefits = (element) => {
+        gsap.to(element, {
+        padding: "12.5px 53.5px", 
+        fontSize: "16px", 
+        width: 'auto',
+        duration: 0.3, 
+        overwrite: "auto"
+        });
+    };
+    
+    // Функция для удаления стилей
+    let removeStylesBenefits = (element) => {
+        gsap.to(element, {
+        padding: "", // Установите обратно на исходное значение
+        fontSize: "", // Установите обратно на исходное значение
+        duration: 0.3, 
+        width: 0,
+        overwrite: "auto"
+        });
+    };
+    
+    // Создаем экземпляр Intersection Observer
+    let observerBenefits = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                addStylesBenefits(entry.target);
+            }, 300);
+        } else {
+            removeStylesBenefits(entry.target);
+        }
+        });
+    });
+    
+    // Находим все кнопки
+    let benefitsButtons = document.querySelectorAll(`.${classes.benefitsBlock__btn} a`);
+    
+    // Наблюдаем за каждой кнопкой
+    benefitsButtons.forEach(button => {
+        observerBenefits.observe(button);
+    });
     return (
         <div className={`${classes.benefitsBlock} block-padding`} id="block4">
             <div className={`${classes.benefitsBlock__inner} block-width`}>

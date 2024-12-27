@@ -8,7 +8,11 @@ import BenefitsBlock from './components/BenefitsBlock/BenefitsBlock';
 import StepsBlock from './components/StepsBlock/StepsBlock';
 import ServicesBlock from './components/ServicesBlock/ServicesBlock';
 import StoriesBlock from './components/StoriesBlock/StoriesBlock';
+import SupportBlock from './components/SupportBlock/SupportBlock';
+import PricingBlock from './components/PricingBlock/PricingBlock';
 import Footer from './components/Footer/Footer';
+import DemobookBlock from './components/DemobookBlock/DemobookBlock';
+import ToTopBtn from './components/ToTopBtn/ToTopBtn';
 
 function App(props) {
     return (
@@ -23,7 +27,11 @@ function App(props) {
                 <StepsBlock state={props.state} />
                 <ServicesBlock state={props.state} />
                 <StoriesBlock state={props.state} />
+                <SupportBlock state={props.state} />
+                <PricingBlock state={props.state} />
+                <DemobookBlock state={props.state} />
                 <Footer state={props.state} />
+                <ToTopBtn state={props.state} />
             </div>
         </div>
     );

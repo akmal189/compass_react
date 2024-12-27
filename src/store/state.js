@@ -20,6 +20,11 @@ import services_icon1 from "../images/services_icon1.svg";
 import services_icon2 from "../images/services_icon2.svg";
 import services_icon3 from "../images/services_icon3.svg";
 import services_icon4 from "../images/services_icon4.svg";
+import footer_socials1 from "../images/fb_icon.svg";
+import footer_socials2 from "../images/insta_icon.svg";
+import footer_socials3 from "../images/lnkdn_icon.svg";
+import phone_messenger1 from "../images/tg_icon.svg";
+import phone_messenger2 from "../images/wa_icon.svg";
 
 class State {
     constructor () {
@@ -34,6 +39,49 @@ class State {
         'subTitle': 'Focus More on Patient Care',
         'desc': 'Unlock the full potential of your dental or ortho practice with Compass Comprehensive Healthcare Management System System. Our all-in-one solution integrates appointment scheduling, patient management, and billing into a single, easy-to-use platform. Save time, reduce errors, and focus more on providing exceptional patient care',
         'videoLink': 'https://www.youtube.com/embed/0mh5d2a8wp0'
+    }
+    footerInfo = {
+        copyright: 'Copyright © 2023 compass. All Rights Reserved.',
+        address: '123007, Canada, <br>text adress',
+        socials: [
+            {
+                title: 'fb',
+                link: '#',
+                icon: footer_socials1
+            },
+            {
+                title: 'insta',
+                link: '#',
+                icon: footer_socials2
+            },
+            {
+                title: 'linkedin',
+                link: '#',
+                icon: footer_socials3
+            }
+        ],
+        phones: [
+            {
+                title: '+1 (123) 456-78-90',
+            }
+        ],
+        messengers: [
+            {
+                title: 'tg',
+                link: '#',
+                icon: phone_messenger1
+            },
+            {
+                title: 'wa',
+                link: '#',
+                icon: phone_messenger2
+            }
+        ],
+        mails: [
+            {
+                title: 'info@compass.com'
+            }
+        ]
     }
     siteBlocks = {
         'siteBlocksList': [
@@ -575,6 +623,183 @@ class State {
                                 title: '<b>Operational Efficiency:</b> The automated documentation process reduced manual errors and saved significant time, improving overall efficiency.'
                             }
                         ]
+                    }
+                ]
+            },
+            {
+                id: 8,
+                title: 'Support',
+                list: [
+                    {
+                        title: 'FAQs',
+                        popupTitle: 'Hardware requirements',
+                        popupText: 'Hardware requirements refer to the minimum and recommended specifications that a computer system must meet in order to successfully run a particular software, application, or service. These requirements typically include details about the processing power, memory, storage, and additional components necessary for optimal performance. Below are some common categories of hardware requirements:<ol><li>Processor (CPU): The type and speed of the central processing unit (e.g., Intel Core i5 or higher) required to run the software efficiently.</li><li>Memory (RAM): The amount of Random Access Memory needed, usually expressed in gigabytes (e.g., 8GB minimum, 16GB recommended) to handle multiple tasks simultaneously without performance degradation.</li><li>Storage: This includes both the type (HDD or SSD) and the amount of storage space required for installation and operation. A higher amount of SSD storage is typically recommended for faster data retrieval.</li><li>Graphics Processing Unit (GPU): If the application involves graphics rendering, gaming, or video editing, a dedicated graphics card with a specific VRAM (e.g., NVIDIA GTX 1660 with 4GB VRAM) may be required.</li><li>Peripherals: Some applications may require specific hardware like a keyboard, mouse, webcam, microphone, or other external devices.</li><li>Connectivity: Internet connection requirements (e.g., broadband, Wi-Fi) for online services, downloads, or cloud-based applications.</li></ol>'
+                    },
+                    {
+                        title: 'Resources',
+                        popupTitle: 'Resources popup title',
+                        popupText: 'Resources popup text'
+                    },
+                    {
+                        title: 'System Requirements'
+                    },
+                    {
+                        title: 'Hardware requirements'
+                    },
+                    {
+                        title: 'Imaging Compatibility'
+                    },
+                    {
+                        title: 'Service Status (TBD)'
+                    }
+                ]
+            },
+            {
+                id: 9,
+                title: 'Pricing',
+                desc: 'Choose the COMPASS package that best fits your practice’s needs. Each package is designed to provide the essential tools to manage and grow your practice efficiently.',
+                list: [
+                    {
+                        title: 'Essential',
+                        priceList: [
+                            {
+                                title: 'Monthly Price',
+                                price: '$99'
+                            },
+                            {
+                                title: 'Annual Price (10% discount)',
+                                price: '$1.080'
+                            },
+                            {
+                                title: 'Included Active Users',
+                                price: 'Up to 5 users'
+                            },
+                            {
+                                title: 'Per Additional User Fee',
+                                price: '$20 per user per month'
+                            }
+                        ],
+                        popupTitle: 'Package 1: Essential',
+                        popupText: `Perfect for small practices looking to streamline their operations with basic features.
+                            <ul>
+                            <li><b>Target Audience:</b> Small practices or solo practitioners.</li>
+                            <li><b>Number of Active Users:</b> Up to 5 users</li>
+                            <li>
+                            <b>Features:</b> Basic features necessary for practice management. 
+                            <ol>
+                            <li>Appointment Scheduling</li>
+                            <li>Patient Management and EMR</li>
+                            <li>Document Management and Digital Signature</li>
+                            <li>Basic Communication Management (Email, SMS)</li>
+                            <li>To-Do and Queue Management</li>
+                            <li>Basic Reporting and Analytics</li>
+                            </ol>
+                            </li>
+                            <li>
+                            <b>Support:</b> Up to 5 users 
+                            <ol>
+                            <li>Email Support</li>
+                            <li>Access to Online Training Resources</li>
+                            </ol>
+                            </li>
+                            </ul>
+                            <p style="font-size: 18px;"><b>Price:</b> <span style="color: var(--primary);">$99 per month or $1,080 annually</span> (10% discount for annual payment).</p>`
+                    },
+                    {
+                        title: 'Professional',
+                        priceList: [
+                            {
+                                title: 'Monthly Price',
+                                price: '$199'
+                            },
+                            {
+                                title: 'Annual Price (10% discount)',
+                                price: '$2.160'
+                            },
+                            {
+                                title: 'Included Active Users',
+                                price: 'Up to 15 users'
+                            },
+                            {
+                                title: 'Per Additional User Fee',
+                                price: '$20 per user per month'
+                            }
+                        ],
+                        popupTitle: 'Package 2: Professional',
+                        popupText: `It is ideal for growing practices needing advanced features and additional support.
+                            <ul>
+                            <li><b>Target Audience:</b> Growing practices needing more advanced features.</li>
+                            <li><b>Number of Active Users:</b> Up to 15 users</li>
+                            <li>
+                            <b>Features:</b> This plan includes all Essential Plan features plus additional functionalities like advanced communication, inventory management, and financial tools.
+                            <ol>
+                            <li>All features from the Essential Package</li>
+                            <li>Advanced Communication Management (Email, SMS, eFax)</li>
+                            <li>xRay Scanning Integration</li>
+                            <li>Inventory Management</li>
+                            <li>Insurance Claim Management</li>
+                            <li>Financial Management (Billing, Payments, Invoicing)</li>
+                            <li>Advanced Reporting and Analytics</li>
+                            </ol>
+                            </li>
+                            <li>
+                            <b>Support:</b> Up to 5 users 
+                            <ol>
+                            <li>Priority Email Support</li>
+                            <li>Live Chat Support</li>
+                            <li>Access to Online Training Resources and Webinars</li>
+                            </ol>
+                            </li>
+                            </ul>
+                            <p style="font-size: 18px;"><b>Price:</b> <span style="color: var(--primary);">$199 per month or $2,160 annually</span> (10% discount for annual payment).</p>`
+                    },
+                    {
+                        title: 'Enterprise',
+                        priceList: [
+                            {
+                                title: 'Monthly Price',
+                                price: '$299'
+                            },
+                            {
+                                title: 'Annual Price (10% discount)',
+                                price: '$3.240'
+                            },
+                            {
+                                title: 'Included Active Users',
+                                price: 'Up to 30 users'
+                            },
+                            {
+                                title: 'Per Additional User Fee',
+                                price: '$20 per user per month'
+                            }
+                        ],
+                        popupTitle: 'Package 3: Enterprise',
+                        popupText: `Designed for large or multi-location practices requiring comprehensive management tools and dedicated support.
+                            <ul>
+                            <li><b>Number of Active Users:</b> Up to 30 users</li>
+                            <li>
+                            <b>Features:</b> This plan includes all the Professional Plan features plus process automation, customizable workflows, enhanced security, and dedicated support.
+                            <ol>
+                            <li>All features from the Essential Package</li>
+                            <li>Process Automation</li>
+                            <li>Online Request Forms</li>
+                            <li>Patient Portal</li>
+                            <li>Customizable Workflows</li>
+                            <li>Enhanced Security Features</li>
+                            <li>Advanced Marketing Tools</li>
+                            </ol>
+                            </li>
+                            <li>
+                            <b>Support:</b> Up to 5 users 
+                            <ol>
+                            <li>Dedicated Account Manager</li>
+                            <li>24/7 Phone Support</li>
+                            <li>Onsite Training and Support (as needed)</li>
+                            <li>Customized Implementation Assistance</li>
+                            </ol>
+                            </li>
+                            </ul>
+                            <p style="font-size: 18px;"><b>Price:</b> <span style="color: var(--primary);">$299 per month or $3,240 annually</span> (10% discount for annual payment).</p>`
                     }
                 ]
             }

@@ -5,7 +5,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import classes from './FeaturesBlock.module.css';
+import classes from './FeaturesBlock.module.scss';
 
 const FeaturesBlock = observer((props) => {
     const swiperRef = useRef(null);

@@ -1,6 +1,6 @@
 import React from "react";
 import { observer } from 'mobx-react';
-import classes from './ServicesBlock.module.css';
+import classes from './ServicesBlock.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -11,7 +11,7 @@ import { useMediaQuery } from 'react-responsive';
 const ServicesBlock = observer((props) => {
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
     return (
-        <div className={`${classes.servicesBlock} block-padding`}>
+        <div className={`${classes.servicesBlock} block-padding`} id="block6">
             <div className={`${classes.servicesBlock__inner} block-width`}>
                 <div className={classes.servicesBlock__header}>
                     <div className={`${classes.servicesBlock__title} block-title`}>{props.state.siteBlocks.siteBlocksList[5].title}</div>

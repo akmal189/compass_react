@@ -1,15 +1,15 @@
-import React, {useRef, useState } from "react";
+import React from "react";
 import { observer } from 'mobx-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import classes from './StoriesBlock.module.css';
+import classes from './StoriesBlock.module.scss';
 
 const StoriesBlock = observer((props) => {
     return (
-        <div className={`${classes.storiesBlock} block-padding`}>
+        <div className={`${classes.storiesBlock} block-padding`} id="block7">
             <div className={`${classes.storiesBlock__inner} block-width`}>
                 <div className={classes.storiesBlock__header}>
                     <div className={`${classes.storiesBlock__title} block-title`}>{props.state.siteBlocks.siteBlocksList[6].title}</div>

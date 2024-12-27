@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { observer } from 'mobx-react';
-import classes from './Header.module.css';
+import classes from './Header.module.scss';
 
 
 const Header = observer((props) => {
@@ -25,18 +25,7 @@ const Header = observer((props) => {
                     HEADER_WR.classList.remove(`${classes.fixed}`)
                 }
             })
-            let scrollHeight = IsMobile ? 500 : 800;
-            /*window.addEventListener('scroll', () => {
-                if (document.scrollingElement.scrollTop > scrollHeight) {
-                    document.querySelector('.to-top-btn a').classList.add('active')
-                } else {
-                    document.querySelector('.to-top-btn a').classList.remove('active')
-                }
-            });
-            document.querySelector('.to-top-btn a').addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });*/
-
+            
             document.querySelector(`#siteLogo`).addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });

@@ -1,10 +1,10 @@
 import React from "react";
 import { observer } from 'mobx-react';
-import classes from './StepsBlock.module.css';
+import classes from './StepsBlock.module.scss';
 
 const StepsBlock = observer((props) => {
     return (
-        <div className={`${classes.stepsBlock} block-padding`}>
+        <div className={`${classes.stepsBlock} block-padding`} id="block5">
             <div className={`${classes.stepsBlock__inner} block-width`}>
                 <div className={classes.stepsBlock__header}>
                     <div className={`${classes.stepsBlock__title} block-title`}>{props.state.siteBlocks.siteBlocksList[4].title}</div>

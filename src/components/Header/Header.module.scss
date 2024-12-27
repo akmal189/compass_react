@@ -1,0 +1,203 @@
+.siteHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    transition: all 0.3s ease;
+    @media all and (max-width: 980px) {
+        padding: 0 10px;
+    }
+    .black_logo {
+        display: none;
+    }
+    &.fixed {
+        background: #fff;
+        .black_logo {
+            display: block;
+        }
+        .white_logo {
+            display: none;
+        }
+        .siteHeader__button {
+            display: block;
+        }
+        @media all and (max-width: 480px) {
+            .siteHeader__logo img {
+                max-width: 116px;
+            }
+        }
+        .siteHeader__burgerBtn.active {
+            background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.5764 1.60205L1.65613 23.5224' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M1.65613 1.60205L23.5764 23.5224' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        }
+    }
+    &__inner {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        @media all and (max-width: 980px) {
+            gap: 5px;
+            padding: 15px 0;
+        }
+    }
+    &__left {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @media all and (max-width: 980px) {
+            gap: 13px;
+        }
+    }
+    &__logo {
+        font-size: 0;
+        cursor: pointer;
+        img {
+            max-width: 155px;
+            transition: all 0.5s ease;
+        }
+    }
+    &__button {
+        display: none;
+        a {
+            border-radius: 250px;
+            color: #fff;
+            padding: 8px 28px;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            font-family: "helvetica", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 24px;
+            background: var(--primary);
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            @media all and (max-width: 980px) {
+                padding: 3px 18px;
+            }
+            &:hover {
+                background: var(--primary-hover);
+            }
+            span {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                z-index: 2;
+            }
+            i {
+                position: relative;
+                z-index: 2;
+                font-size: 0;
+                line-height: normal;
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        @media all and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: flex-start;
+            transition: all 0.5s ease;
+            transform: translateX(100%);
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 306px;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10;
+            padding: 33px 52px;
+            will-change: transform;
+            max-height: calc(100vh - 60px);
+            overflow: auto;
+            &.opened {
+                transform: translateX(0);
+            }
+        }
+    }
+    &__menu {
+
+        nav {
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                @media all and (max-width: 1200px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 30px;
+                }
+                li {
+                    
+                    a {
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        transition: all 0.5s ease;
+                        @media all and (max-width: 1200px) {
+                            color: #fff;
+                            font-size: 24px;
+                        }
+                        &:hover {
+                            @media all and (min-width: 1201px) {
+                                color: var(--primary);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__langs {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-family: mainfont1;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #7B7B7B;
+        a {
+            color: #7B7B7B;
+            @media all and (max-width: 1200px) {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            &:hover {
+                color: var(--primary);
+            }
+            &.active {
+                color: #030344;
+                @media all and (max-width: 1200px) {
+                    color: var(--grey-2);
+                }
+            }
+        }
+    }
+    &__burgerBtn {
+        display: none;
+        @media all and (max-width: 1200px) {
+            display: block;
+            cursor: pointer;
+            width: 45px;
+            height: 40px;
+            transition: all 0.3s ease;
+            background: url("data:image/svg+xml,%3Csvg width='35' height='28' viewBox='0 0 35 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.24347 1.56201H33.2435' stroke='%230BB9EE' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M2.24347 13.562H33.2435' stroke='%230BB9EE' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M2.24347 25.562H33.2435' stroke='%230BB9EE' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            &.active {
+                background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.5764 1.60205L1.65613 23.5224' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M1.65613 1.60205L23.5764 23.5224' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+}
+
+
+
+

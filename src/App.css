@@ -25,6 +25,9 @@
     --grey-1: #D9D9D9;
     --grey-2: #7B7B7B;
     --black: #1f2025;
+    --mainfont2: 'helvetica', sans-serif;
+    --mainfont1: 'helvetica-light', sans-serif;
+
 }
 
 html, body {
